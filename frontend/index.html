@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+    .container{
+        justify-content: space-around;
+        width: 100%;
+height: 50px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .container label{
+    margin-left: 40px;
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 5px;
+
+    }
+    select{
+        background-color: rgb(70, 163, 251);
+        padding: 5px;
+        color: white;
+        padding: 5px;
+    border-radius: 5px;
+    border: none;
+    }
+    .container button{
+        /* border: 2px solid red; */
+        background-color: rgb(70, 163, 251);
+        padding: 5px;
+        color: white;
+    margin-left: 140px;
+    margin-top: 15px;
+   border-radius: 5px;
+   border: none;
+  
+
+    }
+    #convertbtn{
+        background-color: rgb(70, 163, 251);
+        padding: 5px;
+        color: white;
+    margin-left: 140px;
+    margin-top: 15px;
+   border-radius: 5px;
+    }
+    .codepart{
+        /* border: 1px solid red; */
+display: flex;
+        height: 800px;
+    }
+    #Output{
+        width: 50%;
+     /* margin-left: 750px; */
+        /* border: 1px solid rgb(4, 77, 27);   */
+    }
+
+
+    /* ================================ */
+
+    #codearea {
+        width: 750px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #171616;
+}
+
+.code-editor {
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+}
+
+#outputCode{
+    width: 690px;
+    height: 100vh;
+            white-space: pre;
+            font-family: 'Courier New', monospace;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ccc;
+}
+
+</style>
+<body>
+    <nav>    <h1>code convertor</h1> </nav>
+
+    <hr> 
+    <div class="container">
+        <label for="code"> code :</label>
+        <select name="language" id="language">
+            <option value="JavaScript">JavaScript</option>
+            <option value="python">python</option>
+            <option value="java">java</option>
+            <option value="c++">c++</option>
+            <option value="php">php</option>
+            <option value="c">c</option>
+        </select>
+        <select name="code" id="code">
+            <option value="python">python</option>
+            <option value="java">java</option>
+            <option value="c++">c++</option>
+            <option value="php">php</option>
+            <option value="c">c</option>
+          </select>
+ 
+        <button id="convertbtn">convert</button>
+        <button id="debug">deburg</button>
+ 
+       
+        
+
+    </div>
+
+    <div class="codepart">
+<div id="codearea">
+    <!-- <p>code</p> -->
+
+</div>
+
+        <div id="output">
+
+            <!-- <p>Output</p> -->
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.27.0/min/vs/loader.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
