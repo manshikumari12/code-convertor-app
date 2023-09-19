@@ -5,5 +5,6 @@ The Code Converter App is a versatile tool that allows users to convert, debug, 
 
 https://code-convertor-app.netlify.app/
 
-Tech-stack -  nodejs javascript css html express bcrypt openai-chatgpt
+Tech-stack -  nodejs, javascript, css, html, express, bcrypt, openai-chatgpt
+
 
